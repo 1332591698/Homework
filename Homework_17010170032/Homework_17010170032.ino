@@ -1,7 +1,7 @@
 #include "Morse.h"
-char data;
+String dataStr="";
 Morse morse(13);
-void sendMorse();
+void sendMorse(char c);
 void setup() 
 {
   Serial.begin(9600);
@@ -11,15 +11,22 @@ void loop()
 {
   if(Serial.available()>0)
   {
-      data="";
+      dataStr="";
       while(Serial.available()>0)
       {
-          data=char(Serial.read());
+          dataStr+=char(Serial.read());
+          delay(2);
         }
-      sendMorse();
+        if(dataStr.length()>0)
+        {
+          for(int i=0;i<dataStr.length();i++)
+            {
+              sendMorse(dataStr[i]);
+            }
+          }
     }
 }
-void sendMorse()
+void sendMorse(char data)
 {
       switch(data)
       {
