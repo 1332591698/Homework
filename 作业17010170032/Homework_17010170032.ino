@@ -140,5 +140,5 @@ void sendMorse()
         default:
         break;
         }
-    morse.c_space();
+      morse.c_space();
   }
