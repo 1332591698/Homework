@@ -175,4 +175,5 @@ void sendMorse(char data)
         default:
         break;
         }
+      morse.c_space();
   }
