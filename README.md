@@ -31,5 +31,9 @@
 
 ### **3.TaskDay04**
 
-#### MorseFunMode.ino
-- 3.1.莫尔斯电码函数形式
+#### 3.1.MorseFunMode.ino
+- 莫尔斯电码函数形式
+#### 3.2.Nixie.ino
+- 四段数码管显示代码
+#### 3.3.NixiePic.png
+- 四段数码管显示电路图
